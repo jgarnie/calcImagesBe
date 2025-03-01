@@ -1,0 +1,42 @@
+{
+    "name": "test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev",
+        "dev:deploy": "sst dev --stage stage",
+        "deploy": "sst deploy --stage prod",
+        "cleanup": "sst remove --stage prod",
+        "unlock": "sst unlock --stage prod",
+        "dev:debug": "sst dev --stage stage --verbose",
+        "cleanup:dev": "sst remove --stage stage",
+        "unlock:dev": "sst unlock --stage stage",
+        "lint": "next lint",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@aws-sdk/client-cloudfront": "^3.744.0",
+        "@aws-sdk/client-lambda": "^3.744.0",
+        "@aws-sdk/client-s3": "^3.744.0",
+        "@aws-sdk/s3-request-presigner": "^3.758.0",
+        "@tailwindcss/postcss": "^4.0.6",
+        "aws-lambda": "^1.0.7",
+        "axios": "^1.7.9",
+        "next": "15.1.6",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "sst": "^3.8.2",
+        "tailwind-merge": "^3.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "22.13.1",
+        "@types/react": "19.0.8",
+        "@types/react-dom": "19.0.3",
+        "eslint": "9.20.0",
+        "eslint-config-next": "15.1.6",
+        "postcss": "^8.5.2",
+        "tailwindcss": "4.0.6",
+        "typescript": "5.7.3"
+    }
+}
